@@ -19,7 +19,7 @@ class ExpressServer {
     }
 
     listen(dirname, httpPort = 8080) {
-        this.port = process.env.PORT || httpPort;
+        this.port = 80;
         this._configureExpress(dirname);
 
         // create the HTTP Server and start listening.
